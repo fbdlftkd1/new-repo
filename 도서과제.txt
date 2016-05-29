@@ -1,0 +1,89 @@
+Menu = None
+
+def printMenu():
+    print("서울특별시 도서관 소장도서 정보 검색")
+    print("---------------------------------")
+    print("도서관 목록 : D")
+    print("도서 검색 : F")
+    print("종료 : E")
+    print("---------------------------------")
+def launcher(menu):
+    global MenuFunction
+    if Menu=='D':
+        MenuFunction = LibraryList()
+    elif Menu=='F':
+        MenuFunction = FindBook()
+    elif Menu = 'E':
+        MenuFunction = QuitProgram()
+        
+def LibraryList():
+    print("서울특별시 도서관 목록")
+    print("1. 강남도서관")
+    print("2. 강동도서관")
+    print("3. 강서도서관")
+    print("4. 개포도서관")
+    print("5. 고덕평생학습관")
+    print("6. 고척도서관")
+    print("7. 구로도서관")
+    print("8. 남산도서관")
+    print("9. 노원평생학습관")
+    print("10. 도봉도서관")
+    print("11. 동대문도서관")
+    print("12. 동작도서관")
+    print("13. 마포평생아현분관")
+    print("14. 마포평생학습관")
+    print("15. 서대문도서관")
+    print("16. 송파도서관")
+    print("17. 양천도서관")
+    print("18. 어린이도서관")
+    print("19. 영등포평생학습관")
+    print("20. 용산도서관")
+    print("21. 정독도서관")
+    print("22. 종로도서관")
+    print("----------------------")
+    librarynum=int(input("도서를 찾을 도서관 번호 입력 :"))
+    global LibraryCode
+    if librarynum==1:
+        LibraryCode="MA"
+    elif librarynum==2:
+        LibraryCode="MB"
+    elif librarynum==3:
+        LibraryCode="MC"
+    elif librarynum==4:
+        LibraryCode="MD"
+    elif librarynum==5:
+        LibraryCode="ME"
+    elif librarynum==6:
+        LibraryCode="MF"
+    elif librarynum==7:
+        LibraryCode="MG"
+    elif librarynum==8:
+        LibraryCode="MH"
+    elif librarynum==9:
+        LibraryCode="MV"
+    elif librarynum==10:
+        LibraryCode="MJ"
+    elif librarynum==11:
+        LibraryCode="MK"
+    elif librarynum==12:
+        LibraryCode="ML"
+    elif librarynum==13:
+        LibraryCode="MX"
+    elif librarynum==14:
+        LibraryCode="MM"
+    elif librarynum==15:
+        LibraryCode="MP"
+    elif librarynum==16:
+        LibraryCode="MW"
+    elif librarynum==17:
+        LibraryCode="MN"
+    elif librarynum==18:
+        LibraryCode="MQ"
+    elif librarynum==19:
+        LibraryCode="MR"
+    elif librarynum==20:
+        LibraryCode="MS"
+    elif librarynum==21:
+        LibraryCode="MT"
+    elif librarynum==22:
+        LibraryCode="MU"
